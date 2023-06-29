@@ -1,0 +1,469 @@
+/* Primary Brand */
+:root {
+  --iris-color: #4d5ae5;
+  --ocean-color: #404bbf;
+  --navy-blue-color: #2e2f42;
+  --green-color: #31d0aa;
+  --slate-color: #434455;
+  --light-slate-color: #8e8f99;
+  --cornflower-color: #e7e9fc;
+  --cloud-color: #f4f4fd;
+  --navy-blue-modal: #2e2f42;
+  --grey-color: #2e2f42;
+  --white-color: #ffffff;
+  --dairy-color: #fcfcfc;
+}
+
+/**
+  |============================
+  | Comon rules
+  |============================
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--slate-color);
+  background-color: var(--white-color);
+  line-height: 1.5;
+}
+
+/**
+  |============================
+  | Global style reset
+  |============================
+*/
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.button {
+  font-family: inherit;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/**
+  |============================
+  | header
+  |============================
+*/
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  border-bottom: 1px solid var(--cornflower-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 76px;
+  align-items: center;
+}
+
+.header-logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris-color);
+  margin-right: 76px;
+}
+
+.header-logo-accent {
+  color: var(--navy-blue-color);
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+/* .header-nav-item {
+} */
+
+.header-nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--ocean-color);
+}
+
+/* .header-address {
+} */
+
+.header-address-list {
+  display: flex;
+  gap: 40px;
+}
+
+/* .header-address-item {
+} */
+
+.header-address-link {
+  letter-spacing: 0.02em;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--ocean-color);
+}
+
+/**
+  |============================
+  | First section
+  |============================
+*/
+
+.hero {
+  background-color: var(--navy-blue-color);
+  padding: 188px 0 188px;
+}
+
+/* .container-hero {
+} */
+
+.hero-title {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 496px;
+}
+
+.hero-button {
+  display: block;
+  background-color: var(--iris-color);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border: 0px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--ocean-color);
+}
+
+/**
+  |============================
+  | SwiftTech section
+  |============================
+*/
+
+.swifttech {
+  padding: 120px 0 120px;
+}
+
+/* .swifttech-title {
+} */
+
+.swifttech-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.swifttech-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.swifttech-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  margin-bottom: 8px;
+}
+
+.swifttech-text {
+  letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | What are we doing section
+  |============================
+*/
+
+.doing {
+  padding-bottom: 120px;
+}
+
+.doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  margin-bottom: 72px;
+}
+
+.doing-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* .doing-item {
+} */
+
+/* .doing-img {
+} */
+
+/**
+  |============================
+  | Team section
+  |============================
+*/
+
+.team {
+  background-color: var(--cloud-color);
+  padding: 120px 0px 120px;
+}
+
+/* .container-team {
+} */
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue-color);
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  background-color: var(--white-color);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* .team-img {
+} */
+
+.team-description {
+  padding: 32px 16px;
+}
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  margin-bottom: 8px;
+}
+
+.team-text {
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/**
+  |============================
+  | footer
+  |============================
+*/
+
+.container-footer {
+  padding-left: 156px;
+}
+
+.footer {
+  background-color: var(--navy-blue-color);
+  padding: 100px 0;
+}
+
+.footer-logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris-color);
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-logo-accent {
+  color: var(--cloud-color);
+}
+.footer-text {
+  letter-spacing: 0.02em;
+  color: var(--cloud-color);
+  width: 264px;
+}
+
+/**
+  |============================
+  | Portfolio buttons
+  |============================
+*/
+
+.portfolio {
+  padding: 96px 0 120px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+/* .filter-item {
+} */
+
+.portfolio-button {
+  background-color: var(--cloud-color);
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--iris-color);
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--cornflower-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--ocean-color);
+  color: var(--white-color);
+  border: 1px solid transparent;
+}
+
+/**
+  |============================
+  | Portfolio gallery
+  |============================
+*/
+
+/* .container-portfolio {
+} */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-description {
+  border: 1px solid var(--cornflower-color);
+  border-top: 0px;
+  padding: 32px 16px;
+}
+
+/* .portfolio-item {
+} */
+
+/* .portfolio-link {
+} */
+
+/* .portfolio-img {
+} */
+
+.gallery-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  margin-bottom: 8px;
+}
+
+.gallery-text {
+  letter-spacing: 0.02em;
+}
