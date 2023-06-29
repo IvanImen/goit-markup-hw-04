@@ -247,6 +247,17 @@ address {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
+.swifttech-item-container {
+  display: flex;
+  height: 112px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cloud-color);
+}
+
+/* .swifttech-icon {
+} */
+
 .swifttech-subtitle {
   font-weight: 500;
   font-size: 20px;
