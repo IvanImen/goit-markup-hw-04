@@ -373,8 +373,8 @@ address {
   height: 40px;
   background-color: var(--iris-color);
   border-radius: 50%;
-  flex-shrink: 0;
 }
+
 .team-social-link {
   display: flex;
   width: 100%;
@@ -382,8 +382,8 @@ address {
   justify-content: center;
   align-items: center;
 }
-.team-social-icon {
-}
+/* .team-social-icon {
+} */
 
 /**
   |============================
@@ -443,14 +443,20 @@ address {
   |============================
 */
 
-.container-footer {
-  padding-left: 156px;
-}
-
 .footer {
   background-color: var(--navy-blue-color);
   padding: 100px 0;
 }
+
+.container-footer {
+  padding-left: 156px;
+  display: flex;
+  gap: 120px;
+  align-items: baseline;
+}
+
+/* .footer-webstudio {
+} */
 
 .footer-logo-link {
   font-family: 'Raleway', sans-serif;
@@ -472,6 +478,37 @@ address {
   color: var(--cloud-color);
   width: 264px;
 }
+
+.footer-media {
+}
+.footer-media-text {
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris-color);
+  border-radius: 50%;
+}
+.footer-social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .footer-social-icon {
+} */
 
 /**
   |============================
